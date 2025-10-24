@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="gallery style.css" />
+</head>
+<body>
+  <header>
+    <h1>Explore Our Gallery</h1>
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="landscape">Landscapes</button>
+      <button data-filter="portrait">Portraits</button>
+      <button data-filter="architecture">Architecture</button>
+    </div>
+  </header>
+
+  <main class="gallery">
+    <!-- Repeat this card structure for 12 images -->
+    <div class="card" data-category="landscape">
+      <div class="info">
+          <img src="https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?cs=srgb&dl=clouds-cloudy-conifers-247478.jpg&fm=jpg" alt="landscape 1">
+      </div>
+      <div class="info">
+
+        <h3>Mountain View</h3>
+        <span class="category">landscape</span>
+      </div>
+      <div class="overlay">
+        <p>A breathtaking view of the mountains at sunrise.</p>
+      </div>
+    </div>
+    <div class="card" data-category="portrait">
+<!--Display more image cards-->
+        <div class="cards" data-category="portraits">
+            <img src="	https://www.designyourway.net/art/wp-content/uploads/2019/09/maxresdefault-18.jpg" alt="Potrait 1">
+            <div class="card-content">
+                <h2>Artistic Defination Of Portrait</h2>
+                <span class="category">Portraits</span>
+                <div class="overlay">
+                    <p>A visual representation of a person, typically focusing on the face and expression, aiming to capture personality, mood, or status. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards" data-category="architecture">
+                <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/05/architectural-detail-drawings-emi-nakajima-1.jpg"alt="Architecture 1"
+                <div class="card-content">
+                    <h2>Structural Defination</h2>
+                    <span class ="category">Architecture</span>
+                    <div class="overlay">
+                        <p>Architecture is both the process and the product of planning, designing, and constructing buildings or other structures</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card"data-category="landscapes">
+                    <img src="https://img.freepik.com/premium-photo/framing-landscape-while-traveling_756748-53123.jpg" alt="Landscape 2">
+                    <div class="card-content">
+                        <h2>Landscape Photographic Framing</h2>
+                        <span class="category">Landscapes</span>
+                        <div class="overlay">
+                            <p>An image orientation where the width exceeds the height—ideal for wide vistas, group shots, or cinematic compositions. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card"data-category="portraits">
+                        <img src="https://pbs.twimg.com/media/E-sverKXsAIievq.jpg" alt="Portrait 2">
+                        <div class="card-content">
+                            <h2>Potrait Photographic Framing</h2>
+                            <span class="category">Portraits</span>
+                            <div class="overlay">
+                                <p>An image orientation where the height exceeds the width—commonly used for headshots, fashion, or editorial photography.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card"data-category="architecture">
+                            <img src="https://www.arkitectrue.com/wp-content/uploads/2024/12/4a339fbb63.webp" alt="Architecture 2">
+                            <div class="card-content">
+                                <h2>Cultural/philosophical Lens</h2>
+                                <span class="category">Architecture</span>
+                                <div class="overlay">
+                                    <p>A reflection of societal values, technological advancement, and historical narratives—e.g., apartheid-era civic buildings vs. post-1994 democratic spaces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                          <div class="card"data-category="landscapes">
+                                <img src="https://archovavisuals.com/wp-content/uploads/2024/01/DALL·E-2024-01-09-18.03.03-A-hyper-realistic-wide-format-image-16_9-ratio-illustrating-how-to-implement-sustainable-urban-planning-strategies.-The-image-shows-a-model-of-a-sus.webp" alt="Landscape 3">
+                                <div class="card-content">
+                                    <h2>environmental/Geographically Lens</h2>
+                                    <span class="category">Landscapes</span>
+                                    <div class="overlay">
+                                        <p>The physical terrain and ecological features of a region, often analyzed for sustainability, tourism, or urban planning.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card"data-category="portraits">
+                                    <img src="https://flash---art.com/wp-content/uploads/2020/05/Sam-Kirk-and-Sandra-Antongiorgi_Public-Art-Column_2666_Flash-Art-01-1024x683.png" alt="Portrait 3">
+                                    <div class="card-content">
+                                        <h2>Cultural/Historical Lens</h2>
+                                        <span class="category">Portraits</span>
+                                        <div class="overlay">
+                                            <p>A medium through which individuals are immortalized, often reflecting societal values, power dynamics, or identity (e.g., royal portraits, activist murals).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card"data-category="architecture">
+                                        <img src="https://www.collidu.com/media/catalog/product/img/9/5/9590e2d0ccc94ca95361134fe8fd494caf1459d5ecd92160ff361bfb05324e2c/database-architecture-slide2.png"alt="Architecture 3"
+                                        <div class="card-content">
+                                            <h2>Digital Context</h2>
+                                            <span class ="category">Architecture</span>
+                                            <div class="overlay">
+                                                <p>The conceptual framework of software or systems design—e.g., database architecture, cloud infrastructure, or UX architecture.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card"data-category="landscapes">
+                                            <img src="https://static.vecteezy.com/system/resources/previews/010/518/833/original/digital-finance-and-banking-investment-service-on-microchip-with-cloud-computing-in-futuristic-background-bank-building-with-online-payment-secure-money-and-financial-innovation-technology-vector.jpg" alt="Landscape 4">
+                                            <div class="card-content">
+                                                <h2>Strategic/Business Use</h2>
+                                                <span class="category">Landscapes</span>
+                                                <div class="overlay">
+                                                    <p>A metaphor for the broader context or competitive terrain in which entities operate—e.g., "the legal tech landscape" or "South Africas banking landscape."</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card"data-category="portraits">
+                                                <img src="https://www.hubspot.com/hs-fs/hubfs/Google Drive Integration/Copy of css media queries_42023-1.png?width=500&height=669&name=Copy of css media queries_42023-1.png" alt="Portrait 4">
+                                                <div class="card-content">
+                                                    <h2>UX Context</h2>
+                                                    <span class="category">Portraits</span>
+                                                    <div class="overlay">
+                                                        <p>CSS media queries detect portrait orientation for mobile-first design.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card"data-category="architecture">
+                                                    <img src="https://images.squarespace-cdn.com/content/v1/5b5ce06131d4df2027f4e21c/cf216696-d8a3-4a28-94a2-78e1d104116d/2-Building-Codes-Safety-Quality-BuildBuyRefi.jpg" alt="Architecture 4">
+                                                    <div class="card-content">
+                                                        <h2>Legal Perspective</h2>
+                                                        <span class ="category">Architecture</span>
+                                                        <div class="overlay">
+                                                            <p>The built environment as a subject of regulation, liability, and public interest—touching on zoning laws, building codes, and delictual responsibility.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+    <!-- Add 11 more cards with varied categories -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
