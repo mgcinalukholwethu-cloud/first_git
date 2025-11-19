@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #77afe1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+         #profileCard {
+      background-color: rgb(106, 147, 209);
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    #profileCard.active-status {
+      background-color: #34cc49;
+    }
+
+    #profileImage {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    
+    <div id="profileCard">
+    <img id="profileImage" src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/558794428_1538238500949072_247369056780875385_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=uRK8c_WPnqkQ7kNvwFTSiyc&_nc_oc=AdlAC1zHM2rmwncWsxx50mh_uctrtNgctrG6gYrDiV4hAMqdnwH0MJXxTbWRgiludhE&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=1nqWXqOX1GCZ8q-qeJ5Baw&oh=00_AfiRl6cwNOM4FeYqj7LYq4EeJgYK0Z87U2DeX61Vdt2blw&oe=692353C1" alt="Profile Picture" >
+    <h2 id="profileName">Lukho Gcaki</h2>
+    <p id="profileRole">Footballer</p>
+    <p id="profileBio">Passionate about soccer and National Team player.</p>
+
+    <button id="updateNameBtn">Update Name</button>
+    <button id="updateRoleBtn">Update Role</button>
+    <button id="toggleStatusBtn">Toggle Active Status</button>
+    <button id="changeImageBtn">Change Image</button>
+  </div>
+<script>
+    const profileName = document.getElementById('profileName');
+    const profileRole = document.getElementById('profileRole');
+    const profileImage = document.getElementById('profileImage');
+    const profileCard = document.getElementById('profileCard');
+
+    document.getElementById('updateNameBtn').addEventListener('click', () => {
+      const newName = prompt("Enter a new name:");
+      if (newName) {
+        profileName.textContent = newName;
+      }
+    });
+
+    document.getElementById('updateRoleBtn').addEventListener('click', () => {
+      const newRole = prompt("Enter a new role:");
+      if (newRole) {
+        profileRole.textContent = newRole;
+      }
+    });
+
+    document.getElementById('toggleStatusBtn').addEventListener('click', () => {
+      profileCard.classList.toggle('active-status');
+    });
+
+    document.getElementById('changeImageBtn').addEventListener('click', () => {
+      const newImageUrl = prompt("Enter a new image URL:");
+      if (newImageUrl) {
+        profileImage.src = newImageUrl;
+      }
+    });
+  </script>
+
+</body>
+</html>
